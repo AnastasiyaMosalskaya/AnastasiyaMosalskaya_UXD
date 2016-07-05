@@ -1,0 +1,179 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica;
+}
+html, body {
+	height: 100%;	
+}
+
+body {
+	background: #E3F1F9;
+}
+
+header, form, footer {
+	width: 100%;
+}
+
+header {
+	background: #111A29;
+	height: 250px;
+}
+
+.body-wrapper {
+	position: relative;
+}
+
+.content {
+	max-width: 1000px;
+	margin: auto;
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+.content.picture {
+	background: url(header-bg.jpg) no-repeat;
+	background-position: 100%;
+
+}
+
+.header-title{
+	vertical-align: middle;
+	color: #FFFFFF;
+	line-height: 34px;
+	display: table-cell;
+}
+
+.first-title{
+	text-transform: capitalize;
+	font-size: 32px; 
+}
+
+.second-title{
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.third-title {
+	text-transform: capitalize;
+	font-size: 28px; 
+}
+
+.line-after-header{
+	background: #BFD4DE;
+	height: 56px;
+}
+
+.text {
+	color: #374654;
+	padding-left: 7%;
+	padding-top: 15px;
+	font-weight: 600;
+	font-size: 21px;
+}
+
+
+.main {
+	width: 100%;
+	padding-bottom: 70px;
+}
+
+.content.wrap {
+	background: rgb(255, 255, 255);
+	margin-bottom: 57px;
+}
+
+.form-title {
+	padding: 30px 0 45px 66px;
+	font-style: italic;
+	font-size: 17px;
+	color:  #374654;
+}
+
+
+
+form {
+	max-width: 900px;
+	margin: auto;
+	padding-bottom: 35px;
+	text-transform: capitalize;
+}
+
+label {
+	color: #364654;
+	font-size: 15px;
+	font-weight: 600;
+	float: left;
+	text-align: right;
+	width: 145px;
+	margin-right: 10px;
+	line-height: 40px;
+}
+
+input, select {
+	margin-bottom: 33px;
+	box-sizing: border-box;
+	width: 280px;
+	height: 40px;
+	float: left;
+
+}
+
+.roundedButton{
+	background: #364654;
+	border: 1px;
+	border-radius: 4px;
+	width: 100px;
+	height: 30px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	margin-left: 20px;
+}
+
+
+footer {
+	height: 60px;
+	background: #364654;
+	position: absolute;
+	bottom: 0;
+	color: #FFFFFF;
+}
+
+.footer-content{
+	padding-top: 20px;
+}
+
+.link {
+	float: right;
+}
+
+.copy{
+	float: left;
+}
+.link a {
+	color:  #FFFFFF;
+	margin-right: 10px;
+}
+
+
+@media (max-width: 890px){
+	.formElement {
+		float: left;
+		width: 100%;
+	}
+}
+
+@media (max-width: 480px){
+	input, select {
+		margin: 0 10% 20px 15%;
+	}
+
+	label{
+		margin: 0 18%;
+	}
+
+	label[for="firstAddress"], label[for="secondAddress"]{
+		margin: 0 25%;
+	}
+}
